@@ -33,11 +33,13 @@
      }
 
      article {
-        float: left;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
         padding: 20px;
-        width: 70%;
-        backgroud-color: #f1f1f1;
-        height: 300px;
+        background-color: #f1f1f1;
+        max-height: 600px;
+        overflow-y: auto;
      }
      section::after {
         content: "";
@@ -83,6 +85,9 @@
             <img src="gambar/gambar4.jpg" alt="gambar4">
             <img src="gambar/gambar5.jpg" alt="gambar5">
             <img src="gambar/gambar6.jpg" alt="gambar6">
+            <img src="gambar/gambar7.jpg" alt="gambar7">
+            <img src="gambar/gambar8.jpg" alt="gambar8">
+            <img src="gambar/gambar9.jpg" alt="gambar9">
             
             <p><b>Kesimpulan:</b> </p>
         </article>
