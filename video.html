@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Navigasi Video</title>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Elda Serlya">
+    <meta name="nim" content="233307044">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #b3f8d7, #6ec8ec);
+            margin: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #ba4c11, #421804);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: linear-gradient(135deg, #f8f2b3, #ecad6e);
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: auto; /* Mengubah tinggi menjadi otomatis */
+            margin-bottom: 100px;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer {
+            background: linear-gradient(135deg, #a61423, #ecad6e);
+            padding: 10px;
+            text-align: center;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 999; /* Menambahkan z-index agar footer selalu di atas */
+        }
+        video {
+            width: 100%;
+            height: calc(100% - 40px); /* Sesuaikan dengan tinggi video dan padding */
+        }
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h2>Skeatboard Hunting</h2>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gambar.html">Gambar</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="svg.html">SVG</a></li>
+            <li><a href="canvas.html">Canvas</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>Video Web</h1>
+        <video controls muted>
+            <source src="gambar/video/Skateboard.mp4" type="video/mp4">
+            Browser tidak mendukung
+        </video>
+
+        <p><b>Kesimpulan: untuk menampilkan video dapat menggunakan video controls sama dengan audio pengaturannya suara muted dan untuk memulai ada autoplay</b> </p>
+
+        <h1>Link Video</h1>
+        <iframe width="400" height="100"
+            src="https://www.youtube.com/embed/fn3KMW1kuAw">
+        
+    </iframe>
+    </article>
+</section>
+
+<footer>
+    <p>eldaserlya@gmail.com</p> <!--ubah sesuai selera-->
+</footer>
+</body>
+</html>
