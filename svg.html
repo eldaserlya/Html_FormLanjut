@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SVG Nav</title>
+    <meta charset="Utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+    <meta name="author" content="Elda Serlya">
+    <meta name="nim" content="233307044">
+    <style>
+     *{
+        box-sizing: border-box;
+     }
+     body {
+        font-family: Arial, Arial, Helvetica, sans-serif;
+     }
+     header{
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+     }
+     nav{
+        float: left;
+        width : 30%;
+        height: 300px;
+        background: #ccc;
+        padding: 20px;
+     }
+     nav ul {
+        list-style-type: none;
+        padding: 0;
+     }
+
+     article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        backgroud-color: #f1f1f1;
+        height: 300px;
+     }
+     section::after {
+        content: "";
+        display: table;
+        clear:both;
+     }
+     footer{
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+     }
+     @media (max-width: 600px){
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>SVG</h2>
+    </header>
+
+    <section>
+        <nav>
+        <ul>
+           <li> <a href="index.html">Home</a></li> 
+           <li><a href="gambar.html">Gambar</a></li>
+           <li><a href="event.html">Event</a></li>
+           <li><a href="audio.html">Audio</a></li>
+           <li><a href="video.html">Video</a></li>
+           <li><a href="svg.html">SVG</a></li>
+           <li><a href="canvas.html">Canvas</a></li>
+        </ul>
+        </nav>
+            <article>
+                <h1>SVG Web</h1>
+                <svg width="150" height="120">
+                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="beige"/>
+                </svg>
+                <svg width="200" height="100">
+                    <rect width="400" height="100" style="fill:rgb(154, 237, 211); stroke-width : 10; stroke:rgb(0, 0, 0)"/>
+                </svg>
+                <svg width="200" height="200">
+                    <rect x="50" y="20" rx="20" ry="20" width="100" height="175"
+                        style="fill:mediumslateblue;stroke:navy;stroke-width:5;opacity:0.5"/>
+                </svg>
+                <svg height="210" width="195" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="100,10 40,198 190,78 10,78 160,198"
+                    style="fill:palevioletred;stroke:purple;stroke-width:5;" />
+                  </svg>
+            </article>
+    </section>
+
+    <footer>
+        <p>eldaserlya@gmail.com</p> <!--ubah sesuai selera-->
+    </footer>
+</body>
+</html>
