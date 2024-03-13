@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Halaman Beranda</title>
+    <title>Navigasi Gambar</title>
     <meta charset="Utf-8">
     <meta name="viewport"content="width=device-width, initial-scale=1">
     <meta name="author" content="Elda Serlya">
@@ -12,9 +12,12 @@
      }
      body {
         font-family: Arial, Arial, Helvetica, sans-serif;
+        margin: 0; /* Menghilangkan margin default browser */
+        padding: 0; /* Menghilangkan padding default browser */
+        background: linear-gradient(135deg, #911557, #fca1f1);
      }
      header{
-        background-color: #666;
+        background: linear-gradient(135deg, #eb1679, #130592);
         padding: 30px;
         text-align: center;
         font-size: 35px;
@@ -24,7 +27,7 @@
         float: left;
         width : 30%;
         height: 300px;
-        background: #ccc;
+        background: linear-gradient(135deg, #e1a6f3, #f9a6c4);
         padding: 20px;
      }
      nav ul {
@@ -33,36 +36,40 @@
      }
 
      article {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
         padding: 20px;
         background-color: #f1f1f1;
-        max-height: 600px;
-        overflow-y: auto;
+        overflow: hidden; 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
      }
-     section::after {
-        content: "";
-        display: table;
-        clear:both;
+     article h1 {
+        text-align: left; 
+        width: 100%; 
      }
+
+     article img {
+        width: 30%; 
+        height: auto; 
+        margin-bottom: 20px; 
+     }
+     
+    .kesimpulan {
+        width: 100%; 
+        margin-top: 20px; 
+        text-align: center; 
+    }
      footer{
-        background-color: #777;
+        background: linear-gradient(135deg, #200a5e, #761576);
         padding: 10px;
         text-align: center;
         color: white;
-     }
-     @media (max-width: 600px){
-        nav, article {
-            width: 100%;
-            height: auto;
-        }
      }
     </style>
 </head>
 <body>
     <header>
-        <h2>PNM Official Web</h2>
+        <h2>Pemandangan Alam</h2>
     </header>
 
     <section>
@@ -79,17 +86,17 @@
         </nav>
 
         <article>
+            <h1>Gambar Pemandangan</h1>
             <img src="gambar/gambar.jpg" alt="gambar">
             <img src="gambar/gambar1.jpg" alt="gambar1">
             <img src="gambar/gambar2.jpg" alt="gambar2">
             <img src="gambar/gambar4.jpg" alt="gambar4">
             <img src="gambar/gambar5.jpg" alt="gambar5">
             <img src="gambar/gambar6.jpg" alt="gambar6">
-            <img src="gambar/gambar7.jpg" alt="gambar7">
-            <img src="gambar/gambar8.jpg" alt="gambar8">
-            <img src="gambar/gambar9.jpg" alt="gambar9">
             
-            <p><b>Kesimpulan:</b> </p>
+            <div class="kesimpulan">
+                <p><b>Kesimpulan:</b> untuk menampilkan gambar yang sudah dalam file html menggunakan img src</p>
+            </div>
         </article>
     </section>
 
