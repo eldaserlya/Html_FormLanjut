@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Halaman Pendaftaran</title>
+    <meta charset="Utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+    <meta name="author" content="Elda Serlya">
+    <meta name="nim" content="233307044">
+    <style>
+     *{
+        box-sizing: border-box;
+     }
+     body {
+        font-family: Arial, Arial, Helvetica, sans-serif;
+     }
+     header{
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+     }
+     nav{
+        float: left;
+        width : 30%;
+        height: 300px;
+        background: #ccc;
+        padding: 20px;
+     }
+     nav ul {
+        list-style-type: none;
+        padding: 0;
+     }
+
+     article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: auto;
+     }
+     section::after {
+        content: "";
+        display: table;
+        clear:both;
+     }
+     footer{
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        clear: both;
+     }
+     .form-box {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+     }
+     .form-box h2 {
+        font-size: 18px; /* Ukuran teks informasi pribadi dan permintaan pertemuan */
+        font-weight: normal; /* Membuat teks tidak tebal */
+        margin-top: 0; /* Menghapus margin atas yang default */
+     }
+     .form-box label {
+        font-size: 14px; /* Ukuran teks label */
+     }
+     .form-box input[type="text"],
+     .form-box input[type="tel"],
+     .form-box input[type="email"],
+     .form-box input[type="date"],
+     .form-box input[type="time"],
+     .form-box input[type="range"],
+     .form-box input[type="submit"] {
+        font-size: 14px; /* Ukuran teks input */
+     }
+     </style>
+</head>
+<body>
+    <header>
+        <h2>Pendaftaran Anggota Partai</h2>
+    </header>
+
+    <section>
+        <nav>
+        <ul>
+           <li> <a href="index.html">Home</a></li> 
+           <li><a href="gambar.html">Gambar</a></li>
+           <li><a href="event.html">Event</a></li>
+           <li><a href="audio.html">Audio</a></li>
+           <li><a href="video.html">Video</a></li>
+           <li><a href="svg.html">SVG</a></li>
+           <li><a href="canvas.html">Canvas</a></li>
+        </ul>
+        </nav>
+
+        <article>
+            <h1>Formulir Pendaftaran dan Acara</h1>
+            
+            <!-- Kotak Informasi Pribadi -->
+            <div class="form-box">
+                <h2>Informasi Pribadi</h2>
+                <form action="#" method="post">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required><br><br>
+        
+                    <label for="telepon">No. Telepon :</label>
+                    <input type="tel" id="telepon" name="telepon" pattern="[0-9]{4}-[0-9]{6}" required><br><br>
+        
+                    <label for="email">Alamat Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+        
+                    <label for="tanggal_lahir">Tanggal Lahir :</label>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" min="1968-01-01" max="2015-12-30" required><br><br>
+        
+                </form>
+            </div>
+            
+            <hr> <!-- Garis pembatas -->
+            
+            <!-- Kotak Permintaan Pertemuan -->
+            <div class="form-box">
+                <h2>Permintaan Pertemuan</h2>
+                <form action="#" method="post">
+                    <label for="tujuan_pertemuan">Tujuan Pertemuan:</label>
+                    <input type="text" id="tujuan_pertemuan" name="tujuan_pertemuan" required><br><br>
+        
+                    <label for="volume">Tingkat Kepentingan Pertemuan :</label>
+                    <input type="range" id="volume" name="volume" min="0" max="100" required><br><br>
+
+                    <label for="tanggal_pertemuan">Tanggal Pertemuan :</label>
+                    <input type="date" id="tanggal_pertemuan" name="tanggal_pertemuan" min="2023-01-01" max="2025-12-31" required><br><br>
+                    
+                    <label for="waktu">Waktu :</label>
+                    <input type="time" id="waktu" name="waktu" min="17:00" max="21:00" required><br><br>
+                
+                </form>
+            </div>
+                    <input type="submit" value="Submit">
+        </article>
+    </section>
+
+    <footer>
+        <p>eldaserlya@gmail.com</p>
+    </footer>
+</body>
+</html>
