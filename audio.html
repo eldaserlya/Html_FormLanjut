@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Navigasi Audio</title>
+    <meta charset="Utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+    <meta name="author" content="Elda Serlya">
+    <meta name="nim" content="233307044">
+    <style>
+     *{
+        box-sizing: border-box;
+     }
+     body {
+        background: linear-gradient(135deg, #f8f2b3, #ecad6e);
+        font-family: Arial, Arial, Helvetica, sans-serif;
+     }
+     header{
+        background: linear-gradient(135deg, #0a6433, #925a05);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+     }
+     nav{
+        float: left;
+        width : 30%;
+        height: 300px;
+        background: linear-gradient(135deg, #a0f8b0, #fffcbd);
+        padding: 20px;
+     }
+     nav ul {
+        list-style-type: none;
+        padding: 0;
+     }
+
+     article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        backgroud-color: #f1f1f1;
+        height: 300px;
+     }
+     section::after {
+        content: "";
+        display: table;
+        clear:both;
+     }
+     footer{
+         background: linear-gradient(135deg, #adf2de, #130592);
+        padding: 10px;
+        text-align: center;
+        color: white;
+     }
+     @media (max-width: 600px){
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Web Audio</h2>
+    </header>
+
+    <section>
+        <nav>
+        <ul>
+           <li> <a href="index.html">Home</a></li> 
+           <li><a href="gambar.html">Gambar</a></li>
+           <li><a href="event.html">Event</a></li>
+           <li><a href="audio.html">Audio</a></li>
+           <li><a href="video.html">Video</a></li>
+           <li><a href="svg.html">SVG</a></li>
+           <li><a href="canvas.html">Canvas</a></li>
+        </ul>
+        </nav>
+
+        <article>
+            <h1>Website Audio</h1>
+            <audio controls autoplay muted>
+                <source src="gambar/audio/suara.mp3" type="audio/mpeg">
+                Browser tidak mendukung pemutar audio.
+            </audio><br>
+            <audio controls autoplay>
+                <source src="gambar/audio/suara1.mp3" type="audio/mpeg">
+                Browser tidak mendukung pemutar audio.
+            </audio>
+            
+            
+            <p><b>Kesimpulan: </b>untuk menampilkan audio menggunakan audio controls dan untuk mengatur suaranya dapat dengan auto mulai atau muted suara, untuk muted suara video jika ditekan akan langsung tidak bersuara</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>eldaserlya@gmail.com</p> 
+    </footer>
+</body>
+</html>
